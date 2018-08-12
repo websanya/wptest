@@ -1,0 +1,22 @@
+
+.site-header-inner,
+.site-navigation-inner,
+.site-carousel,
+.site-content,
+.site-footer-inner {
+  @extend .container;
+}
+
+.site-content {
+  @extend .clearfix;
+}
+
+.page-area.page-front {
+  @extend .col-md-4;
+  float: left;
+}
+
+.site-news {
+  @extend .col-md-8;
+  float: left;
+}

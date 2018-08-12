@@ -1,0 +1,103 @@
+.site-carousel {
+  @extend .carousel;
+  position: relative;
+  top: -297px;
+  &-image {
+    @extend .d-block;
+    @extend .w-100;
+    @extend .col-md-8;
+    float: left;
+    padding: 0;
+    max-width: 740px !important;
+    height: auto !important;
+    @media screen and (min-width: 992px) {
+      height: 336px !important;
+    }
+  }
+}
+
+.carousel-item {
+  @extend .clearfix;
+  &-inner {
+    @extend .col-md-4;
+    position: relative;
+    float: left;
+    height: 203px;
+    background-color: #2073b2;
+    @media screen and (min-width: 992px) {
+      padding-left: 35px;
+      padding-right: 0;
+      border-radius: 3px 0 0 3px;
+      height: 336px;
+    }
+  }
+}
+
+.carousel-desc {
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 14px;
+  @media screen and (min-width: 992px) {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+}
+
+.carousel-time {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 13px;
+  position: absolute;
+  bottom: 60px;
+  i {
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 992px) {
+    position: absolute;
+    bottom: 80px;
+  }
+}
+
+.carousel-category {
+  @extend .btn;
+  @extend .btn-light;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  bottom: 15px;
+  color: #00acdd;
+  &:hover {
+    color: #00acdd;
+  }
+  @media screen and (min-width: 992px) {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+
+.carousel-controls {
+  @extend .clearfix;
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
+  background-color: #007ddd;
+  border-radius: 3px;
+  a {
+    display: block;
+    float: left;
+    padding: 5px 15px;
+    color: #ffffff;
+    &:first-child {
+      border-right: 1px solid #2690e2;
+      border-radius: 3px 0 0 3px;
+    }
+    &:last-child {
+      border-radius: 0 3px 3px 0;
+    }
+    &:hover {
+      text-decoration: none;
+      background-color: lighten(#007ddd, 20%);
+    }
+  }
+}

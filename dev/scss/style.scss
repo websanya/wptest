@@ -1,0 +1,15 @@
+/*!
+ * Theme Name: test
+ * Theme URI: https://github.com/websanya/wptest/
+ * Author: Alexander Goncharov
+ * Author URI: https://websanya.ru/
+ * Description: WP Test task.
+ * Version: 1.0.0
+ */
+@import "vendor/bootstrap/bootstrap.scss";
+@import "base/base";
+@import "layout/grid";
+@import "components/header";
+@import "components/carousel";
+@import "components/content";
+@import "components/footer";

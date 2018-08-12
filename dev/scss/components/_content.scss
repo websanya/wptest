@@ -1,0 +1,41 @@
+main {
+  margin-bottom: 40px;
+}
+
+.page-area {
+  margin-bottom: 40px;
+}
+
+.page-area-content {
+  padding: 25px 30px;
+  background-color: #ec9d13;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.page-area-title,
+.site-news-title {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.site-news-item {
+  @extend .clearfix;
+  margin-bottom: 25px;
+  &-time {
+    a {
+      color: #808080;
+      &:hover {
+        color: lighten(#808080, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+  &-image {
+    display: block;
+    float: left;
+    margin-right: 25px;
+  }
+}

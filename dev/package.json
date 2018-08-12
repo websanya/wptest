@@ -1,0 +1,24 @@
+{
+  "name": "cfg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styles": "NODE_ENV=development gulp styles",
+    "styles:watch": "NODE_ENV=development gulp styles:watch",
+    "styles:prod": "NODE_ENV=production gulp styles",
+    "styles:prod:watch": "NODE_ENV=production gulp styles:watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.1"
+  }
+}
